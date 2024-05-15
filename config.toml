@@ -1,8 +1,0 @@
-baseURL = 'https://axel-etcheverry.com'
-languageCode = 'fr-fr'
-title = 'Axel Etcheverry'
-
-theme = "hyperlight"
-
-[build]
-  writeStats = true

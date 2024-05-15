@@ -1,0 +1,58 @@
+# Configure main menu and social menu
+#[[main]]
+#identifier = "home"
+#name = "Home"
+#url = "/"
+#[main.params]
+#icon = "home"
+#newtab = true
+
+# icons founded in https://github.com/tabler/tabler-icons/tree/main/icons/outline
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/euskadi31"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://twitter.com/euskadi31"
+
+[social.params]
+icon = "brand-twitter"
+
+[[social]]
+identifier = "bluesky"
+name = "BlueSky"
+url = "https://bsky.app/profile/euskadi31.bsky.social"
+
+[social.params]
+icon = "brand-bluesky"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/euskadi31/"
+
+[social.params]
+icon = "brand-linkedin"
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/euskadi31"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "instagram"
+name = "Instagram"
+url = "https://www.instagram.com/euskadi31/"
+
+[social.params]
+icon = "brand-instagram"
