@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "icons/twitter.svg",
+    "name": "Twitter",
+    "link": "https://twitter.com/euskadi31",
+    "label": "Follow"
+  },
+  {
+    "icon": "icons/linkedin.svg",
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/euskadi31/",
+    "label": "Connect"
+  },
+  {
+    "icon": "icons/github.svg",
+    "name": "GitHub",
+    "link": "https://github.com/euskadi31",
+    "label": "Follow"
+  },
+  {
+    "icon": "icons/500px.svg",
+    "name": "500px",
+    "link": "https://500px.com/p/euskadi31?view=photos",
+    "label": "Follow"
+  },
+  {
+    "icon": "icons/instagram.svg",
+    "name": "Instagram",
+    "link": "https://www.instagram.com/euskadi31/?hl=fr",
+    "label": "Follow"
+  },
+  {
+    "icon": "icons/google-maps.svg",
+    "name": "Google Maps",
+    "link": "https://www.google.fr/maps/contrib/115467269969255213236",
+    "label": "Follow"
+  }
+]

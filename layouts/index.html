@@ -1,0 +1,94 @@
+{{ define "main" }}
+<div class="filter-blur sticky top-0 z-10 flex flex-col justify-center px-3 py-2 dark:border-b dark:border-gray-900" style="background: rgba(255, 255, 255, 0); box-shadow: rgba(0, 0, 0, 0) 0px 1px 3px; min-height: 48px;">
+  <div class="flex flex-none items-center justify-between">
+    <span class="flex items-center space-x-3">
+      <span class="flex cursor-pointer items-center justify-center rounded-md p-2 hover:bg-gray-200 dark:hover:bg-gray-800 lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </span>
+      <h2 class="text-primary transform-gpu text-sm font-bold line-clamp-1" style="transform: translateY(100%); opacity: 0;">Home</h2>
+    </span>
+  </div>
+  <div></div>
+</div>
+
+<div class="p-4"></div>
+
+
+<div class="mx-auto w-full max-w-3xl px-4 py-12 pb-10 md:px-8">
+  <div class="pb-24 space-y-8 md:space-y-16">
+    <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+      <h4 class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40"></h4>
+      <div class="col-span-10">
+        <div class="prose text-primary">
+          <p>Salut, je suis Axel, Je suis un développeur autodidact <a target="_blank" rel="noopener noreferrer" href="https://designdetails.fm">podcaster</a>, <a href="/writing">writer</a>, and <a target="_blank" rel="noopener noreferrer" href="https://github.com/brianlovin">software tinkerer</a>. I'm currently building <a target="_blank" rel="noopener noreferrer" href="https://github.com/mobile">native mobile apps at GitHub</a>.</p>
+
+          <p>Before GitHub, I co-founded <a target="_blank" rel="noopener noreferrer" href="https://spectrum.chat">Spectrum</a>, a platform for large-scale communities to have better public conversations. Spectrum was acquired by GitHub in November, 2018.</p>
+          <p>Before Spectrum I designed payments experiences at Facebook, working across Facebook, Messenger, WhatsApp, and Instagram. I originally cut my teeth as the first product designer at <a target="_blank" rel="noopener noreferrer" href="https://buffer.com">Buffer</a>.</p>
+
+          <p>I also co-host the <a target="_blank" rel="noopener noreferrer" href="https://designdetails.fm">Design Details Podcast</a>, a weekly conversation about design process and culture. Design Details is part of <a target="_blank" rel="noopener noreferrer" href="https://spec.fm">Spec.fm</a>, a podcast network for designers and developers, which I co-founded in 2015.</p>
+        </div>
+        <div class="flex pt-6">
+          <a href="https://changelog.brianlovin.com" class="flex space-x-2 flex-none items-center justify-center cursor-pointer leading-none transition-all font-semibold px-4 py-2 text-sm opacity-100 rounded-md text-gray-700 hover:text-gray-1000 shadow-xs bg-white border border-gray-400 border-opacity-30 dark:border-gray-700 dark:hover:border-gray-600 dark:bg-white dark:bg-opacity-10 dark:text-gray-200 dark:hover:text-white hover:border-opacity-50 hover:shadow-sm">View changelog</a>
+        </div>
+      </div>
+    </div>
+    <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+      <h4 class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40">Online</h4>
+      <div class="col-span-10">
+        <div class="flex flex-col space-y-3">
+          {{ $data := getJSON "data/socials.json" }}
+
+          {{ range $data }}
+          <a target="_blank" rel="noopener noreferrer" href="{{ .link }}" class="flex items-center space-x-4 group">
+            <strong class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500">{{ .name }}</strong>
+            <span class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span>
+            <span class="flex-none text-tertiary">{{ .label }}</span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+      <h4 class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40">Where</h4>
+      <div class="col-span-10">
+        <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">
+          <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 50% 0px 0px;"></span>
+          <img alt="Carte de Toulouse" sizes="100vw" srcset="/images/tls.png 640w" decoding="async" data-nimg="responsive" class="rounded-2xl" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" />
+          <noscript></noscript>
+        </span>
+        <p class="flex items-center justify-end pt-2 space-x-2 text-sm text-quaternary md:text-right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Toulouse, France</span>
+        </p>
+      </div>
+    </div>
+    <div class="grid items-start grid-cols-1 gap-6 md:grid-cols-12">
+      <h4 class="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40">Work</h4>
+      <div class="col-span-10">
+        <div class="flex flex-col space-y-3">
+          {{ $data := getJSON "data/works.json" }}
+
+          {{ range $data }}
+          <a target="_blank" rel="noopener noreferrer" href="{{ .link }}" class="flex items-center space-x-4 group">
+            <strong class="flex-none font-medium text-gray-1000 group-hover:text-blue-600 group-hover:underline dark:text-gray-100 dark:group-hover:text-blue-500">{{ .company }}</strong>
+            <span class="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800"></span>
+            <span class="flex-none text-tertiary">{{ .position }}</span>
+            <span class="flex-none font-mono text-quaternary">{{ .start }}—{{ if eq .end "" }}&nbsp;&nbsp;{{else}}{{ .end }}{{end}}</span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{{ .Content }}
+{{ end }}

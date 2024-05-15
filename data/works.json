@@ -1,0 +1,58 @@
+[
+  {
+    "company": "Angell",
+    "link": "https://angell.bike",
+    "position": "Lead Architecte Cloud",
+    "start": "2020",
+    "end": ""
+  },
+  {
+    "company": "Somfy Protect",
+    "link": "https://www.somfy.fr",
+    "position": "Architecte Cloud",
+    "start": "2018",
+    "end": "20"
+  },
+  {
+    "company": "MolotovTV",
+    "link": "https://molotov.tv",
+    "position": "Développeur sénior",
+    "start": "2016",
+    "end": "18"
+  },
+  {
+    "company": "Kokoroe",
+    "link": "https://kokoroe.co",
+    "position": "CTO",
+    "start": "2014",
+    "end": "16"
+  },
+  {
+    "company": "Dacteev",
+    "link": "https://www.dacteev.com",
+    "position": "Co-fondateur",
+    "start": "2013",
+    "end": "14"
+  },
+  {
+    "company": "Audiofanzine",
+    "link": "https://fr.audiofanzine.com",
+    "position": "Développeur web",
+    "start": "2008",
+    "end": "13"
+  },
+  {
+    "company": "Music Action",
+    "link": "https://music-action.com",
+    "position": "Développeur web",
+    "start": "2007",
+    "end": "08"
+  },
+  {
+    "company": "France ProNet",
+    "link": "https://www.francepronet.com",
+    "position": "Développeur web",
+    "start": "2007",
+    "end": "07"
+  }
+]
