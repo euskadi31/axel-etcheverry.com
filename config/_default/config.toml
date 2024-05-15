@@ -1,0 +1,5 @@
+baseURL = 'https://axel-etcheverry.com'
+languageCode = 'fr-fr'
+paginate = 10
+title = 'Axel Etcheverry'
+#  - CTO, Tech Lead, Architecte et développeur logiciel
