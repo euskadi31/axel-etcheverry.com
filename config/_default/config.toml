@@ -8,3 +8,5 @@ enableRobotsTXT = true
 
 
 pagination.pagerSize = 10
+
+timeout = 60
