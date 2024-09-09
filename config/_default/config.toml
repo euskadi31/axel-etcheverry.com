@@ -1,7 +1,10 @@
 baseURL = 'https://www.axel-etcheverry.com'
 languageCode = 'fr-fr'
-paginate = 10
+# paginate = 10
 title = 'Axel Etcheverry'
 #  - CTO, Tech Lead, Architecte et développeur logiciel
 
 enableRobotsTXT = true
+
+
+pagination.pagerSize = 10
