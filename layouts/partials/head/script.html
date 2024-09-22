@@ -1,0 +1,18 @@
+<script>
+  window.uxstack =
+    window.uxstack ||
+    function () {
+      (uxstack.calls = uxstack.calls || []).push(arguments);
+    };
+  uxstack("create", "0191ddca-84e6-7ccd-8835-26eacf65c038", {
+    version: "v1.0.0",
+    modules: {
+      track: {
+        url: "https://cognitive.uxstack.cloud",
+      },
+    },
+  });
+
+  // uxstack("track.identify", "1234");
+</script>
+<script async src="https://sdk.uxstack.cloud/v1/dev/uxstack.js"></script>
