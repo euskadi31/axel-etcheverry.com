@@ -37,3 +37,19 @@
     "url": "{{- .Site.BaseURL -}}"
   }
 </script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "{{- .Site.Title -}}",
+    "url": "{{- .Site.BaseURL -}}",
+    "sameAs": [
+      {{- range $i, $e := .Site.Menus.social -}}
+      {{ if $i }},{{ end -}}
+      "{{- $e.URL -}}"
+      {{- end -}}
+    ],
+    "image": "{{- strings.TrimRight "/" .Site.BaseURL -}}{{- .Site.Params.sidebar.avatar.src -}}"
+  }
+</script>
