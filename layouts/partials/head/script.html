@@ -16,3 +16,24 @@
   // uxstack("track.identify", "1234");
 </script>
 <script async src="https://sdk.uxstack.cloud/v1/dev/uxstack.js"></script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "name": "{{- .Site.Title -}}",
+    "author": {
+      "@type": "Person",
+      "name": "{{- .Site.Title -}}",
+      "url": "{{- .Site.BaseURL -}}",
+      "sameAs": [
+        {{- range $i, $e := .Site.Menus.social -}}
+        {{ if $i }},{{ end -}}
+        "{{- $e.URL -}}"
+        {{- end -}}
+      ],
+      "image": "{{- strings.TrimRight "/" .Site.BaseURL -}}{{- .Site.Params.sidebar.avatar.src -}}"
+    },
+    "url": "{{- .Site.BaseURL -}}"
+  }
+</script>

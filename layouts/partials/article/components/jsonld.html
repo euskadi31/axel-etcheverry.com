@@ -68,6 +68,11 @@
     {{ if .Params.Tags -}}
     "keywords": {{ .Params.Tags | jsonify | safeJS  }},
     {{ end -}}
+    "isPartOf": {
+      "@type" : "Blog",
+      "@id": "{{ .Site.BaseURL }}",
+      "name": "{{- .Site.Title -}}",
+    },
     "url": "{{ .Permalink }}"
   }
 </script>
