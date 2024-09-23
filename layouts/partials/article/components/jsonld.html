@@ -1,0 +1,73 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "{{- .Section -}}",
+    "name": "{{- .Title -}}",
+    "headline": "{{- .Title -}}",
+    "description": "{{- .Summary -}}",
+    "inLanguage": "{{- .Site.LanguageCode -}}",
+    "author": {
+      "@type": "Person",
+      "name": "{{- .Site.Title -}}",
+      "url": "{{- .Site.BaseURL -}}",
+      "sameAs": [
+        {{- range $i, $e := .Site.Menus.social -}}
+        {{ if $i }},{{ end -}}
+        "{{- $e.URL -}}"
+        {{- end -}}
+      ],
+      "image": "{{- strings.TrimRight "/" .Site.BaseURL -}}{{- .Site.Params.sidebar.avatar.src -}}"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "{{- .Site.Title -}}",
+      "url": "{{- .Site.BaseURL -}}",
+      "sameAs": [
+        {{- range $i, $e := .Site.Menus.social -}}
+        {{ if $i }},{{ end -}}
+        "{{- $e.URL -}}"
+        {{- end -}}
+      ],
+      "image": "{{- strings.TrimRight "/" .Site.BaseURL -}}{{- .Site.Params.sidebar.avatar.src -}}"
+    },
+    "accountablePerson": {
+      "@type": "Person",
+      "name": "{{- .Site.Title -}}",
+      "url": "{{- .Site.BaseURL -}}",
+      "sameAs": [
+        {{- range $i, $e := .Site.Menus.social -}}
+        {{ if $i }},{{ end -}}
+        "{{- $e.URL -}}"
+        {{- end -}}
+      ],
+      "image": "{{- strings.TrimRight "/" .Site.BaseURL -}}{{- .Site.Params.sidebar.avatar.src -}}"
+    },
+    "copyrightHolder": "{{- .Site.Title -}}",
+    "copyrightYear": "{{- .Date | time.Format "2006" -}}",
+    "datePublished": "{{- .Date | time.Format "2006-01-02T15:04:05MST"  -}}",
+    "dateModified": "{{- .Lastmod | time.Format "2006-01-02T15:04:05MST" -}}",
+    "wordCount": "{{- .WordCount -}}",
+    {{- $image := partialCached "helper/image" (dict "Context" . "Type" "article") .RelPermalink "article" -}}
+    {{ if $image.exists }}
+    {{ if $image.resource }}
+        {{- $Permalink := $image.resource.RelPermalink -}}
+        {{- $Width := $image.resource.Width -}}
+        {{- $Height := $image.resource.Height -}}
+        {{- $Srcset := "" -}}
+
+        {{- if (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
+            {{- $thumbnail := $image.resource.Resize "800x" -}}
+            {{- $Permalink = $thumbnail.RelPermalink -}}
+        {{- end -}}
+    "image": "{{- strings.TrimRight "/" .Site.BaseURL -}}{{ $Permalink }}",
+    {{ else }}
+    "image": "{{- strings.TrimRight "/" .Site.BaseURL -}}{{ $image.permalink }}",
+    {{ end -}}
+    {{ end -}}
+    {{ if .Params.Tags -}}
+    "keywords": {{ .Params.Tags | jsonify | safeJS  }},
+    {{ end -}}
+    "url": "{{ .Permalink }}"
+  }
+</script>
