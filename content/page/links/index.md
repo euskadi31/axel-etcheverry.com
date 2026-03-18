@@ -1,10 +1,10 @@
 ---
 title: Links
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: Anchorify
+    description: Anchorify est un service de notarisation numérique conçu pour les entreprises et les équipes techniques qui ont besoin de preuves d'intégrité, d'antériorité et de traçabilité, sans jamais exposer leurs données.
+    website: https://anchorify.cloud
+    image: https://anchorify.cloud/favicon.svg
 menu:
   main:
     weight: 4
@@ -12,23 +12,7 @@ menu:
       icon: link
 
 comments: false
-draft: true
+draft: false
 ---
 
-To use this feature, add `links` section to frontmatter.
-
-This page's frontmatter:
-
-```yaml
-links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-```
-
-`image` field accepts both local and external images.
+Voici une liste des différents projets sur le quels je travaille, ou que j'ai trouvé intéressants et que je souhaite partager.
