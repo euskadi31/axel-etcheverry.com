@@ -9,6 +9,10 @@ links:
     description: Anchorify est un service de notarisation numérique conçu pour les entreprises et les équipes techniques qui ont besoin de preuves d'intégrité, d'antériorité et de traçabilité, sans jamais exposer leurs données.
     website: https://anchorify.cloud
     image: https://anchorify.cloud/favicon.svg
+  - title: Tales
+    description: Tales est un framework de tests d'intégration open source écrit en Go, conçu pour décrire des scénarios de test lisibles en HCL. Rapide, déterministe et simple à déployer, il permet de tester des API HTTP et gRPC, des navigateurs web, des applications iOS et Android, des bases de données SQL, l'envoi d'e-mails et des webhooks, avec une architecture extensible basée sur des plugins.
+    website: https://taleslabs.org/
+    image: https://taleslabs.org/favicon.svg
 menu:
   main:
     weight: 4
